@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box; 
+}
+
+@keyframes fade {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+@font-face {
+    font-family: "Necto Mono";
+    src: url(type/Necto-Mono.woff2), url(type/Necto-Mono.woff);
+}
+
