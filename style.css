@@ -12,3 +12,74 @@
     src: url(type/Necto-Mono.woff2), url(type/Necto-Mono.woff);
 }
 
+
+body {
+    background-color: #CCCCCC;
+    font-family: "Necto Mono";
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0; 
+    right: 0;
+    padding: 10px 10px 10px 10px;
+    font-size: 24px;
+
+   
+}
+
+nav a {
+    color: black; 
+    text-decoration: none;
+    margin: 5px 32px 5px 32px;
+
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+}
+
+section {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section div {
+    width: 350px;
+}
+
+
+
+h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+
+
+
+div.slides {
+    height: 475px;
+    position: relative;
+
+}
+
+div.slides img {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+div.slides img:first-child {
+    z-index: 1;
+}
+
+
+div.slides:hover img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
