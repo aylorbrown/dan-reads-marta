@@ -41,6 +41,8 @@ nav a {
     top: 0;
 }
 
+
+
 section {
     display: flex; 
     align-items: center;
@@ -48,8 +50,21 @@ section {
     height: 100vh;
 }
 
+
+
 section div {
     width: 350px;
+}
+
+
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* margin: 20px 0 20px 0; */
+    width: 600px;
 }
 
 
@@ -62,24 +77,24 @@ h1 {
 
 
 
-div.slides {
+/* div.slides {
     height: 475px;
     position: relative;
 
-}
+} */
 
-div.slides img {
+/* div.slides img {
     position: absolute;
     top: 0; 
     left: 0;
     transition: transform 0.5s, box-shadow 0.5s;
-}
+} */
 
-div.slides img:first-child {
+/* div.slides img:first-child {
     z-index: 1;
-}
+} */
 
 
-div.slides:hover img {
+/* div.slides:hover img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+} */
