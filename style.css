@@ -93,6 +93,7 @@ div.slides img {
     /* responsive  */
     width: 100%;
     height: auto;
+    cursor: pointer;
 }
 
 div.slides img:first-child {
@@ -144,4 +145,15 @@ div.p-text {
     div.p-text {
         width: 300px;
     }
+
+    section { 
+
+
+    }
+
+    
+    div.slides {
+        width: 300px;
+    }
+
 }
