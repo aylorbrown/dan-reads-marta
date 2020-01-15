@@ -1,7 +1,9 @@
 //  pick all of the images and layer them based on the z-index
 
-const slideArea = document.querySelector("div.slides")
-const images = slideArea.querySelectorAll("img")
+const slideAreaArray = document.querySelectorAll("div.slides")
+slideAreaArray.forEach ( (slideArea) => {
+
+    const images = slideArea.querySelectorAll("img")
 
 // keep track of two things:
 let currentSlide = 0;
@@ -54,3 +56,6 @@ slideArea.addEventListener("mouseout", () => {
         image.style.transform = "";
     })
 });
+
+
+})
