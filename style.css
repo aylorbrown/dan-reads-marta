@@ -136,17 +136,22 @@ div.p-text {
     }
 }
 
+/* i phone 6/7/8 */
 
-/* iphone 6/7/8 */
+@media screen and (max-width: 375px) {
+
+    img {
+        width: 300px;
+    }
+
+}
+
+/* iphone 6/7/8 plus */
 @media screen and (max-width: 414px) {
 
-    /* main {
-        display: flex;
-    } */
 
     nav { 
         z-index: 99;
- 
     }
 
     section {
@@ -162,11 +167,40 @@ div.p-text {
     div.year {
         z-index: 99;
         width: 125px;
-
     }
 
     div.slides {
         width: 275px;
     }
 
+}
+
+/* ipad */
+
+@media screen and (max-width: 768px) {
+    nav { 
+        z-index: 99;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    div.p-text {
+        width: 300px;
+    }
+
+    div.year {
+        z-index: 99;
+        width: 125px;
+    }
+
+    div.slides {
+        width: 400px;
+    }
+
+
+    
 }
