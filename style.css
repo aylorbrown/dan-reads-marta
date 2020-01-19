@@ -55,6 +55,7 @@ section {
 }
 
 
+
 section div {
     width: 350px;
 }
@@ -83,17 +84,22 @@ div.slides {
 
 } 
 
+/*  add css to javascript?? */
+
+
 div.slides img {
     position: absolute;
     top: 0; 
     left: 0;
     transition: transform 0.5s, box-shadow 0.5s;
+    cursor: pointer;
 
     /* responsive  */
     width: 100%;
     height: auto;
-    cursor: pointer;
 }
+
+
 
 div.slides img:first-child {
     z-index: 1;
@@ -108,24 +114,25 @@ div.slides:hover img {
 
 
 
-
-
-
-
 div.p-container {
     text-align: center;  
+
 }
+
 
 div.p-text {
     display: inline-block;
     position: relative;
     top: 50%;
+    text-align: left;
     transform: translateY(50%);
-    /* align-items: center; */
-    /* justify-content: center; */
     width: 600px;
     
-    /* margin: 20px 0 20px 0; */
+}
+
+p {
+    padding: 20px;
+
 }
 
 div.p-text a {
@@ -141,23 +148,32 @@ div.p-text a {
 }
 
 
+
+
+
+
 /*  iphone x */
 @media screen and (max-width: 375px) {
- 
+    div.slides {
+        position: relative;
+        margin-left: -100px;
+        max-width: 275px;
+        height: auto;
+    }
+    
+    .slides img { 
+        position: relative;
+        margin-left: 50px;
+
+        max-width: 275px;
+        height: auto;
+    }
+
     div.p-text {
         width: 300px;
     }
 }
 
-/* i phone 6/7/8 */
-
-@media screen and (max-width: 375px) {
-
-    img {
-        width: 300px;
-    }
-
-}
 
 /* iphone 6/7/8 plus */
 @media screen and (max-width: 414px) {
@@ -165,12 +181,6 @@ div.p-text a {
 
     nav { 
         z-index: 99;
-    }
-
-    section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
 
     div.p-text {
@@ -182,13 +192,24 @@ div.p-text a {
         width: 125px;
     }
 
-    div.slides {
-        width: 275px;
+    section {
+        display: flex; 
+        align-items: center;
+        justify-content: center;
     }
+
+    .slides img {
+        position: relative;
+        margin-left: 50px;
+
+        max-width: 300px;
+        height: auto;
+    }
+
 
 }
 
-/* ipad */
+/* ipad DONE*/
 
 @media screen and (max-width: 768px) {
     nav { 
