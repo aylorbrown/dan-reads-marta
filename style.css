@@ -76,6 +76,7 @@ h1 {
 }
 
 
+
 div.slides {
     height: 475px;
     position: relative;
@@ -125,6 +126,18 @@ div.p-text {
     width: 600px;
     
     /* margin: 20px 0 20px 0; */
+}
+
+div.p-text a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+
+}
+
+.link:hover {
+    text-decoration: none; 
+    font-weight: normal;
 }
 
 
