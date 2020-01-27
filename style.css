@@ -157,6 +157,10 @@ div.p-text a {
         max-width: 275px;
         height: auto;
     }
+
+    div.year {
+        margin-bottom: 40px;
+    }
     
     .slides img { 
         position: relative;
