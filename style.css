@@ -80,7 +80,6 @@ h1 {
 
 
 
-
 div.slides {
     height: 475px;
     position: relative;
@@ -188,6 +187,11 @@ div.p-text a {
     div.year {
         z-index: 99;
         width: 125px;
+        margin-bottom: 40px;
+    }
+
+    div.slides {
+        max-width: 300px; 
     }
 
     section {
@@ -196,13 +200,13 @@ div.p-text a {
         justify-content: center;
     }
 
-    .slides img {
+    /* div.slides img {
         position: relative;
         margin-left: 50px;
 
         max-width: 300px;
         height: auto;
-    }
+    } */
 
 
 }

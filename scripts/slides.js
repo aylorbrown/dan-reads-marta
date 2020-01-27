@@ -1,3 +1,8 @@
+console.log(screen.width);
+
+
+
+
 //  pick all of the images and layer them based on the z-index
 
 const slideAreaArray = document.querySelectorAll("div.slides")
@@ -37,13 +42,27 @@ slideArea.addEventListener("click", () => {
 
 slideArea.addEventListener("mouseover", () => {
     images.forEach(image => {
-        // const x = 100 * Math.random() -50;
-        // const y = 100 * Math.random() -50;
         // snap to a grid, make it look more natural 
-        const x = 25 * (Math.floor(Math.random() * 5)) -50;
-        const y = 25 * (Math.floor(Math.random() * 5)) -50;
-
-        image.style.transform = `translate(${x}px, ${y}px)`
+        //creates x and y translate variable
+        let xTranslate;
+        let yTranslate;
+        const imageWidth = 400;
+        // media query for mobile
+        if (screen.width <= 768) {
+            const y = 25 * (Math.floor(Math.random() * 5)) -50;
+            //max x and y distance left and right
+            // subtract one full image(max distance) 
+            const maxXTranslateFromCenter = (screen.width * .8 - imageWidth) / 2;
+            xTranslate = ((Math.floor(Math.random() * 5)) -2) / 2 * maxXTranslateFromCenter;
+            yTranslate = y;
+        // media query for laptop +
+        } else {
+            xTranslate = 20 * (Math.floor(Math.random() * 5)) -40;
+            const y = 25 * (Math.floor(Math.random() * 5)) -50;
+            yTranslate = y;
+        }
+        
+        image.style.transform = `translate(${xTranslate}px, ${yTranslate}px)`
     })
 });
 
@@ -56,6 +75,5 @@ slideArea.addEventListener("mouseout", () => {
         image.style.transform = "";
     })
 });
-
 
 })
