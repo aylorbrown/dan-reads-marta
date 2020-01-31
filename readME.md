@@ -10,9 +10,9 @@
 ## Challenges 
 
 
-Ultimately, this was a way for me to practice building more things in Javascript. The biggest challenge was making the mouseover event responsive. The mouseover loops over each image and puts it in a random place. On mobile, the random point on the x-axis was not constrained to the div containing the slideArray.
+Ultimately, this was a way for me to practice building more things in Javascript. The biggest challenge was making the mouseover event responsive. The mouseover loops over each image and when the area is hovered over, the images move in lots of different ways. This is done by applying a mouseover event listener to the slideArea, looping through each image using a .forEach(), and applying a Math.random to the x and y axis. 
 
-I originally tried to solve the problem with media queries in CSS, but realized I would have to add an if/else statement in the mouseover eventListener. 
+This was a pretty simple function when the screen width was greater than 768 px. On mobile, the random point on the x-axis was not constrained to the div containing the slideArray. I originally tried to solve the problem with media queries in CSS, but realized I would have to add an if/else statement in the mouseover eventListener. 
 
 ```javascript
 slideArea.addEventListener("mouseover", () => {
@@ -35,6 +35,10 @@ slideArea.addEventListener("mouseover", () => {
     })
 });
 ```
+
+The trick was creating a const 
+
+![Megan thee Stallion gif](https://gph.is/g/aXmOvDn)
 
 ![Dan Reads MARTA mobile](images/screenshot-mobile.png)
 
