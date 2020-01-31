@@ -38,7 +38,7 @@ slideArea.addEventListener("mouseover", () => {
 
 The trick was creating a const 
 
-![Megan thee Stallion gif](https://gph.is/g/aXmOvDn)
+![Megan thee Stallion gif](https://media.giphy.com/media/Q8fYXIL6siCpJlun0i/giphy.gif)
 
 ![Dan Reads MARTA mobile](images/screenshot-mobile.png)
 
