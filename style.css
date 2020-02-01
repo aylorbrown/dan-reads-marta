@@ -39,13 +39,11 @@ nav a {
     top: 0;
 }
 
-/* main {
-    position: relative;
-    z-index: 1; 
-    background-color: #CCCCCC;
-    min-height: 100vh;
-    transition: transform 0.5s;
-} */
+p::selection {
+    background-color: #FDBE43;
+    color: black;
+}
+
 
 section {
     display: flex; 
@@ -53,7 +51,6 @@ section {
     justify-content: center;
     height: 100vh;
 }
-
 
 
 section div {
@@ -75,8 +72,6 @@ h1 {
     font-size: 48px;
     line-height: 1.2;
 }
-
-
 
 
 
@@ -135,13 +130,13 @@ p {
 div.p-text a {
     text-decoration: none;
     color: black;
-    font-weight: 900;
-
+    font-weight: bold;
 }
 
 .link:hover {
     text-decoration: none; 
     font-weight: normal;
+    color: #FF7500;
 }
 
 
