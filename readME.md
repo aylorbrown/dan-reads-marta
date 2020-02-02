@@ -3,8 +3,7 @@ A visual collection of the books my partner read on Atlanta's public transit ove
 
 Built with CSS, HTML, and Javascript. Responsible for all design and development from wireframe to site build.
 
-
-![Dan Reads MARTA Demo](gifs/Kapture 2020-02-01 at 19.32.58.gif)
+![Dan Reads MARTA Demo](gifs/Kapture2020-02-01at19.32.58.gif)
 
 ## Challenges 
 
