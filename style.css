@@ -39,6 +39,11 @@ nav a {
     top: 0;
 }
 
+h1::selection {
+    background-color: #FDBE43;
+    color: black;
+}
+
 p::selection {
     background-color: #FDBE43;
     color: black;
@@ -88,7 +93,6 @@ div.slides img {
     transition: transform 0.5s, box-shadow 0.5s;
     cursor: pointer;
 
-    /* responsive  */
     width: 100%;
     height: auto;
 }
@@ -102,8 +106,6 @@ div.slides img:first-child {
 div.slides:hover img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-
 
 
 
@@ -141,10 +143,6 @@ div.p-text a {
 
 
 
-
-
-
-/*  iphone x */
 @media screen and (max-width: 375px) {
     div.slides {
         position: relative;
@@ -171,7 +169,6 @@ div.p-text a {
 }
 
 
-/* iphone 6/7/8 plus */
 @media screen and (max-width: 414px) {
 
 
@@ -199,18 +196,7 @@ div.p-text a {
         justify-content: center;
     }
 
-    /* div.slides img {
-        position: relative;
-        margin-left: 50px;
-
-        max-width: 300px;
-        height: auto;
-    } */
-
-
 }
-
-/* ipad DONE*/
 
 @media screen and (max-width: 768px) {
     nav { 
@@ -235,7 +221,5 @@ div.p-text a {
     div.slides {
         width: 400px;
     }
-
-
     
 }
